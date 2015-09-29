@@ -14,6 +14,7 @@ public class ServiceDelegate {
     }
 
     private void checkForNullOrEmpty(Person[] persons) {
+
         for (Person person : persons) {
             if (person.getSurname() == null || person.getName() == null || person.getName().isEmpty() || person.getSurname().isEmpty()) {
                 throw new IllegalStateException("Person contains null or empty mandatory field: " + person);
